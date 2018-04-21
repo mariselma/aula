@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mudar Botao</title>
+</head>
+<body>
+    <button id="b" class="botao" onClick="mudaCor()">Clique para mudar de cor</button>
+
+    <script>
+      function mudaCor(){
+        var cor = document.getElementById("b");
+        if(cor.style.color == "red"){
+            cor.style.color = "blue";
+            cor.style.background = "white";
+        }else{
+            cor.style.color = "red";
+            cor.style.background = "black";
+        }
+      }
+    </script>
+</body>
+</html>
